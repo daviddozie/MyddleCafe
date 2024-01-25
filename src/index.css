@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(394.73% 135.82% at -2.43% -2.06%, rgba(255, 255, 255, 0.95) 0.43%, rgba(255, 255, 255, 0.82) 99.95%) !important;
+    backdrop-filter: blur(9px);
+    width: 100% !important;
+    opacity: 0.8;
+    overflow-x: hidden;
+}
+
+.header__btn {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+}
+
+.Grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero__btn__left {
+    box-shadow: 0px 30px 40px -10px rgba(97, 65, 124, 0.8);
+}
+
+.hero__btn__right {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard__box {
+    box-shadow: 0px 0px 90px 70px rgba(97, 65, 124, 0.1);
+}
+
+.dashboard__inner__box {
+    box-shadow: 0px 0px 20px 5px rgba(97, 65, 124, 0.2);
+}
+
+.dashboard__header {
+    box-shadow: 0px 2.754px 2.754px 0px rgba(0, 0, 0, 0.2);
+}
+
+.p2p {
+    position: relative;
+    transition: ease-in-out 0.5s;
+}
+
+.p2p::before {
+    content: "";
+    width: 30px;
+    bottom: -18px;
+    border: 2px solid #3A125B;
+    background-color: #3A125B;
+    position: absolute;
+}
+
+
+.quick {
+    transition: all ease-in-out 0.5s !important;
+}
+
+.quick:hover {
+    color: #3A125B;
+    font-weight: 600;
+
+}
+
+.quick:hover , .p2p::before {
+    content: "";
+    width: 60px;
+    bottom: -18px;
+    border: 2px solid #3A125B;
+    background-color: #3A125B;
+    position: absolute;
+    animation: trans 1s ease-in-out;
+}
+
+@keyframes trans {
+    0% {
+        transform: translateX(80px);
+    }
+}
